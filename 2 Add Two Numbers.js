@@ -1,3 +1,4 @@
+//Date: 10/05/2016
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -20,16 +21,15 @@ var addTwoNumbers = function(l1, l2) {
         var x = (p!==null) ? p.val:0;
         var y = (q!==null) ? q.val:0;
         var temp = new ListNode((x+y+carry)%10);
-        carry = (x+y+carry)/10
+        carry = Math.floor((x+y+carry)/10);
         curr.next = temp;
         curr = curr.next;
         if(p !== null) p = p.next;
-        if(p !== null) q = q.next;
+        if(q !== null) q = q.next;
     }
-    if(carry!==0){
+    if(carry>0){
         var temp2 = new ListNode(carry);
         curr.next = temp2;
     }
     return dummyHead.next;
 };
-
