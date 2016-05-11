@@ -1,3 +1,10 @@
+/***
+ * Author: TH
+ * Date: 11/05/2016
+ * Idea comes from https://leetcode.com/articles/longest-palindromic-substring/?error=[[error:content-too-short,%208]]#nodebb-comments
+ * Approach #4
+ ***/
+
 /**
  * @param {string} s
  * @return {string}
@@ -27,9 +34,3 @@ var expandAroundCenter = function(s, left, right) {
     return r-l-1;
 
 }
-
-
-
-
-
-
