@@ -1,3 +1,4 @@
+// Idea from http://bookshadow.com/weblog/2015/08/12/leetcode-zigzag-conversion/
 /**
  * @param {string} s
  * @param {number} numRows
